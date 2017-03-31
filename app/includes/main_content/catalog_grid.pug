@@ -1,0 +1,150 @@
+-
+  var cards = [
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "Prada",
+  "kind": "Сапоги",
+  "size": "Размер: 38",
+  "price": "€1,815"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "Gucci",
+  "kind": "Блузка",
+  "size": "Размер: S",
+  "price": "€1,153"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "Fendi",
+  "kind": "Очки",
+  "price": "€250"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "Gucci",
+  "kind": "Сумка дамская",
+  "price": "€1,255"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "Saint Laurent",
+  "kind": "Шорты",
+  "size": "Размер: L",
+  "price": "€425"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "The Elder Statesman",
+  "kind": "Блузка",
+  "size": "Размер: XS",
+  "price": "€1,184"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "Brunello Cucinelli",
+  "kind": "Платье",
+  "size": "Размер: S",
+  "price": "€250"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "F.R.S For Restless Sleepers",
+  "kind": "Рубашка",
+  "size": "Размер: M",
+  "price": "€1,255"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "Saint Laurent",
+  "kind": "Жакет",
+  "size": "Размер: XL",
+  "price": "€1,815"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "Chloe",
+  "kind": "Сумка",
+  "price": "€1,075"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "Chloe",
+  "kind": "Платье",
+  "size": "Размер: S",
+  "price": "€825"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "Gianvito Rossi",
+  "kind": "Туфли",
+  "size": "Размер: 37",
+  "price": "€442"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "Gucci",
+  "kind": "Пальто",
+  "size": "Размер: S",
+  "price": "€5,853"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "Gucci",
+  "kind": "Юбка",
+  "size": "Размер: M",
+  "price": "€2,587"
+  },
+  {
+  "thumbnail": "http://placehold.it/300x400",
+  "brand": "Comme Des Garcons Girl",
+  "kind": "Платье",
+  "size": "Размер: M",
+  "price": "€825"
+  }
+  ];
+
+mixin cards(card)
+  .column.product_card
+    img.thumbnail(src= card.thumbnail)
+    h5.card_brand= card.brand
+    .card_kind= card.kind
+    .card_size= card.size
+    .card_price= card.price
+
+.row.column.text-center
+  h2 Новые поступления
+
+.row.small-up-1.medium-up-2.large-up-3.xlarge-up-4
+  for card in cards
+    +cards(card)
+
+  .column
+    .card_last_item
+      h5 2548
+      p новых товаров за неделю
+      a.hollow.button(href='#') Смотреть
+
+  //.column
+  //  img.thumbnail(src='http://placehold.it/300x400')
+  //  h5 Prada
+  //  p $400
+  //  a.button.expanded(href='#') Buy
+  //
+  //
+  //
+  //.column
+  //  img.thumbnail(src='http://placehold.it/300x400')
+  //  h5 Nulla At Nulla Justo, Eget
+  //  p $400
+  //  a.button.expanded(href='#') Buy
+  //.column
+  //  img.thumbnail(src='http://placehold.it/300x400')
+  //  h5 Nulla At Nulla Justo, Eget
+  //  p $400
+  //  a.button.expanded(href='#') Buy
+  //.column
+  //  img.thumbnail(src='http://placehold.it/300x400')
+  //  h5 Nulla At Nulla Justo, Eget
+  //  p $400
+  //  a.button.expanded(href='#') Buy

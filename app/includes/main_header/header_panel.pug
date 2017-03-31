@@ -1,0 +1,12 @@
+.row
+  .header_contacts.columns.medium-6.large-3.hide-for-medium-only
+    .header_contacts_phone 8 (800) 765 43 21
+    .header_contacts_apps 8 (800) 765 43 21
+  .header_logo.columns.small-12.medium-6.large-6
+    img(src="images/logo.svg")
+  .header_panel_nav.columns.medium-6.large-3.hide-for-medium-only
+    - var items = ["Карзина","Избранное","Вход", "Сообщения"];
+      ul.menu.expanded
+        each item in items.length ? items : ['There are no values']
+          li
+            a.show-for-sr(href='#')= item

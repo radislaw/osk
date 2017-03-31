@@ -1,0 +1,32 @@
+-
+  var values = [
+  {
+  "title": "бренд недели",
+  "brand":"marc jacobs",
+  "class": "top_section_first"
+  },
+  {
+  "title": "рюкзаки",
+  "brand":"arny praht",
+  "class": "top_section_second"
+  },
+  {
+  "title": "платья",
+  "brand":"base forms",
+  "class": "top_section_third"
+  }
+  ];
+
+.row
+  h2.text-center.columns.large-12.hide-for-medium-only Покупай больше, трать меньше
+
+.row
+  .top_section_menu.columns.large-5.hide-for-medium-only
+    ul
+      for val in values
+        li(class= val.class)
+          .top_section_title= val.title
+          .top_section_brand= val.brand
+          a.top_section_link(href="#") Смотреть бренд
+
+  include slider

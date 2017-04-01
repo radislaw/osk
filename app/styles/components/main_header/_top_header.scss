@@ -1,3 +1,94 @@
-.top_header_nav{
+.top-bar {
   background-color: #EAEAEA;
+}
+
+.top_bar_menu {
+  background-color: #EAEAEA;
+  font-size: 14px;
+
+  ul {
+    justify-content: space-between;
+
+    > li {
+      display: flex;
+      align-items: center;
+
+      &:before {
+        content: "";
+        background-repeat: no-repeat;
+      }
+      > a {
+        padding: 9px 1rem 9px 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .top_bar_guarantee:before {
+    background-image: url("/images/garanty.svg");
+    width: 16px;
+    height: 11px;
+  }
+  .top_bar_quality:before {
+    background-image: url("/images/quality.svg");
+    width: 14px;
+    height: 13px;
+  }
+  .top_bar_payment:before {
+    background-image: url("/images/payment_system.svg");
+    width: 20px;
+    height: 14px;
+  }
+  .top_bar_support:before {
+    background-image: url("/images/support.svg");
+    width: 13px;
+    height: 13px;
+  }
+
+  @media screen and (max-width: 868px) {
+    font-size: 12px;
+
+    ul {
+
+      > li {
+
+        a {
+          letter-spacing: 0.3px;
+          padding: 9px 1rem 9px 0.5rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    font-size: 11px;
+
+    ul {
+
+      > li {
+
+        a {
+          letter-spacing: 0.2px;
+          padding: 9px 1rem 9px 0.3rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 720px) {
+    font-size: 11px;
+
+    ul {
+      > li {
+        &:before {
+          display: none;
+        }
+      }
+    }
+  }
 }

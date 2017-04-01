@@ -1,4 +1,4 @@
-var slider = new Swiper('.slider', {
+var slider = new Swiper('.main_slider', {
   pagination: '.swiper-pagination',
   paginationClickable: true,
   spaceBetween: 30,

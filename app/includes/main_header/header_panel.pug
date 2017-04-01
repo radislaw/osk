@@ -1,12 +1,32 @@
-.row
-  .header_contacts.columns.medium-6.large-3.hide-for-medium-only
-    .header_contacts_phone 8 (800) 765 43 21
-    .header_contacts_apps 8 (800) 765 43 21
-  .header_logo.columns.small-12.medium-6.large-6
+-
+  var items = [
+  {
+  "title":"Корзина",
+  "class":"header_panel_cart"
+  },
+  {
+  "title":"Профиль",
+  "class":"header_panel_profile"
+  },
+  {
+  "title":"Избранное",
+  "class":"header_panel_favorites"
+  },
+  {
+  "title":"Вход",
+  "class":"header_panel_logout"
+  }
+  ];
+
+.row.header_panel
+  .header_contacts.columns.large-4.hide-for-medium-only.hide-for-small-only
+    .header_contacts_phone: a(href="tel:88007654321") 8 (800) 765 43 21
+    .header_contacts_apps: a(href="tel:88007654321") 8 (800) 765 43 21
+  .header_logo.columns.small-12.large-4
     img(src="images/logo.svg")
-  .header_panel_nav.columns.medium-6.large-3.hide-for-medium-only
-    - var items = ["Карзина","Избранное","Вход", "Сообщения"];
-      ul.menu.expanded
-        each item in items.length ? items : ['There are no values']
-          li
-            a.show-for-sr(href='#')= item
+  .header_panel_nav.columns.large-4.hide-for-medium-only.hide-for-small-only
+    ul.menu.columns
+      for item in items
+        li(): a(href='#' class= item.class)= item.title
+      li(): a.header_panel_messages(href='#') Сообщения
+        span.badge.header_panel_bage 21

@@ -49,9 +49,11 @@
 //@include motion-ui-animations;
 
 
+@import "components/main_header/top_header";
 @import "components/main_content/top_section_brand";
 @import "components/main_content/slider";
 @import "components/main_content/catalog_grid";
+@import "components/main_content/favorites";
 
 body{
 

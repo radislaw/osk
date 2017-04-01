@@ -1,1 +1,28 @@
-.favorites
+-
+  var slides = [
+  "http://placehold.it/170x255",
+  "http://placehold.it/170x255",
+  "http://placehold.it/170x255",
+  "http://placehold.it/170x255",
+  "http://placehold.it/170x255",
+  "http://placehold.it/170x255",
+  "http://placehold.it/170x255",
+  "http://placehold.it/170x255",
+  "http://placehold.it/170x255",
+  "http://placehold.it/170x255",
+  "http://placehold.it/170x255",
+  "http://placehold.it/170x255"
+  ];
+
+.row.columns.text-center
+  h2 Наши фавориты
+  .swiper-container.favorites
+    .swiper-wrapper
+      for slide in slides
+        .swiper-slide
+          img.thumbnail(src= slide)
+    // Add Pagination
+    .swiper-pagination
+    // Add Arrows
+    .swiper-button-next
+    .swiper-button-prev

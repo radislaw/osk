@@ -1,3 +1,30 @@
+.main_title{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 2.5rem;
+
+  &:before,
+  &:after{
+    content: '';
+    height: 1px;
+    flex:1;
+    background-color: #000;
+
+     @media screen and (max-width: 640px) {
+       height: 0;
+      }
+  }
+
+  &:before{
+    margin-right: 2.5%;
+  }
+
+  &:after{
+    margin-left: 2.5%;
+  }
+}
+
 .product_card {
   padding-bottom: 2rem;
 }

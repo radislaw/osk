@@ -1,0 +1,54 @@
+.top_section {
+  margin-bottom: 2rem;
+
+  &_menu{
+     @media screen and (max-width: 640px) {
+       display: none;
+      }
+  }
+
+  &_wrapper {
+    flex-basis: 50%;
+  }
+
+  &_first,
+  &_second,
+  &_third {
+    display: flex;
+    height: 130px;
+    margin-bottom: 20px;
+
+    .top_section_background {
+      flex-basis: 50%;
+      background-image: url("http://placehold.it/227x130");
+    }
+  }
+
+  &_second {
+    .top_section_background {
+      order: 2;
+    }
+  }
+
+}
+
+.brand_title {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid;
+  padding-bottom: 12px;
+  margin-bottom: 3rem;
+
+   @media screen and (max-width: 640px) {
+     display: none;
+    }
+}
+
+.top_section_brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 24pt;
+  text-transform: uppercase;
+}

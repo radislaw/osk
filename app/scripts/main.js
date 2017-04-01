@@ -1,7 +1,6 @@
 var slider = new Swiper('.main_slider', {
   pagination: '.swiper-pagination',
   paginationClickable: true,
-  spaceBetween: 30,
   effect: 'fade',
   centeredSlides: true,
   autoplay: 2500,
@@ -33,4 +32,12 @@ var favorites = new Swiper('.favorites', {
       pagination: '',
     },
   }
+});
+
+/* Sidr menu */
+
+$('#responsive-menu-button').sidr({
+  name: 'sidr-main',
+  source: '#navigation',
+  displace: false
 });

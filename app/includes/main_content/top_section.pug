@@ -17,16 +17,17 @@
   }
   ];
 
-.row
-  h2.text-center.columns.large-12.hide-for-medium-only Покупай больше, трать меньше
+.row.top_section
+  h2.brand_title Покупай больше, трать меньше
 
-.row
   .top_section_menu.columns.large-5.hide-for-medium-only
-    ul
+    ul.menu.vertical
       for val in values
         li(class= val.class)
-          .top_section_title= val.title
-          .top_section_brand= val.brand
-          a.top_section_link(href="#") Смотреть бренд
+          .top_section_background
+          .top_section_wrapper
+            .top_section_title= val.title
+            .top_section_brand= val.brand
+            a.top_section_link(href="#") Смотреть бренд
 
   include slider

@@ -1,3 +1,51 @@
-nav.header_navbar
+-
+  var items = [
+  {
+  "title":"Новинки",
+  "class":"header_panel_cart"
+  },
+  {
+  "title":"Проверенно",
+  "class":"header_panel_profile"
+  },
+  {
+  "title":"Новое",
+  "class":"header_panel_favorites"
+  },
+  {
+  "title":"Женское",
+  "class":"header_panel_logout"
+  },
+  {
+  "title":"Мужское",
+  "class":"header_panel_cart"
+  },
+  {
+  "title":"Детское",
+  "class":"header_panel_profile"
+  },
+  {
+  "title":"Lifestyle",
+  "class":"header_panel_favorites"
+  },
+  {
+  "title":"Бренды",
+  "class":"header_panel_logout"
+  },
+  {
+  "title":"Community",
+  "class":"header_panel_favorites"
+  },
+  {
+  "title":"Блог",
+  "class":"header_panel_logout"
+  }
+  ];
 
-.second_menu
+
+//#navigation
+  nav.nav
+    ul.menu.columns
+      for item in items
+        li(): a(href='#')= item.title
+

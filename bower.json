@@ -2,6 +2,8 @@
   "name": "oskelly-new",
   "private": true,
   "dependencies": {
+    "swiper": "^3.4.2",
+    "sidr": "^2.2.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",

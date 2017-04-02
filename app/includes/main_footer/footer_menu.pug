@@ -1,0 +1,60 @@
+-
+  var items = [
+  'Помощь и поддержка',
+  'О нас',
+  'Присоединиться к нам',
+  'Рассылка'
+  ];
+
+-
+  var socials = [
+  {
+  "name": "facebook",
+  "class": "footer_menu_fb"
+  },
+  {
+  "name": "tweeter",
+  "class": "footer_menu_tw"
+  },
+  {
+  "name": "pinterest",
+  "class": "footer_menu_pint"
+  },
+  {
+  "name": "google+",
+  "class": "footer_menu_gp"
+  },
+  {
+  "name": "instagramm",
+  "class": "footer_menu_in"
+  },
+  {
+  "name": "youtube",
+  "class": "footer_menu_yt"
+  },
+  {
+  "name": "vkontakte",
+  "class": "footer_menu_vk"
+  },
+  {
+  "name": "odnoklassniki",
+  "class": "footer_menu_ok"
+  },
+  {
+  "name": "telegram",
+  "class": "footer_menu_tg"
+  },
+  {
+  "name": "Мобильные приложения",
+  "class": "footer_menu_apps"
+  }
+  ];
+
+nav.footer_menu
+  ul.menu
+    for item in items
+      li: a(href )= item
+  .footer_socials
+    ul.menu
+      for social in socials
+        li: a(href="#" class= social.class)= social.name

@@ -54,8 +54,16 @@
 @import "components/main_content/top_section";
 @import "components/main_content/slider";
 @import "components/main_content/catalog_grid";
+@import "components/main_content/new_profiles";
 @import "components/main_content/favorites";
+@import "components/main_content/bottom_section";
 
-body {
+@import "components/main_footer/footer_menu";
+@import "components/main_footer/footer_about";
+@import "components/main_footer/footer_payment";
 
+a {
+  &:hover{
+    text-decoration: underline;
+  }
 }

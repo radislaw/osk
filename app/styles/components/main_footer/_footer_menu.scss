@@ -1,0 +1,137 @@
+.footer_menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid #908E8F;
+  border-bottom: 1px solid #908E8F;
+  margin-bottom: 2rem;
+
+  ul {
+    width: initial;
+
+    li {
+
+      a {
+        font-size: 14px;
+
+        &:hover {
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 860px) {
+    flex-direction: column;
+    background-color: #EAEAEA;
+    border-color: #5E5F5F;
+  }
+  @media screen and (max-width: 640px) {
+    ul {
+      flex-direction: column;
+    }
+
+  }
+}
+
+.footer_socials {
+  ul {
+    flex: 1;
+
+    li {
+
+      a {
+        padding: 0;
+        background-repeat: no-repeat;
+        text-indent: -9999rem;
+        transition: all 0.3s;
+        width: 23px;
+        height: 23px;
+        margin-right: 3px;
+
+        &:hover {
+          will-change: transform;
+          transform: scale(1.1);
+        }
+      }
+
+
+    }
+
+    @media screen and (max-width: 880px) {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 640px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+
+      li{
+
+        &:last-of-type {
+          flex-basis: 100%;
+
+          a{
+            margin:auto;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+.footer_menu_fb {
+  //noinspection CssUnknownTarget
+  background-image: url("/images/facebook.svg");
+}
+
+.footer_menu_tw {
+  //noinspection CssUnknownTarget
+  background-image: url("/images/tweeter.svg");
+}
+
+.footer_menu_pint {
+  //noinspection CssUnknownTarget
+  background-image: url("/images/pint.svg");
+}
+
+.footer_menu_gp {
+  //noinspection CssUnknownTarget
+  background-image: url("/images/google.svg");
+}
+
+.footer_menu_in {
+  //noinspection CssUnknownTarget
+  background-image: url("/images/insta.svg");
+}
+
+.footer_menu_yt {
+  //noinspection CssUnknownTarget
+  background-image: url("/images/youtube.svg");
+}
+
+.footer_menu_vk {
+  //noinspection CssUnknownTarget
+  background-image: url("/images/vk.svg");
+}
+
+.footer_menu_ok {
+  //noinspection CssUnknownTarget
+  background-image: url("/images/ok.svg");
+}
+
+.footer_menu_tg {
+  //noinspection CssUnknownTarget
+  background-image: url("/images/telegram.svg");
+}
+
+.footer_menu_apps {
+  background-image: url("/images/apps.svg");
+  width: 46px !important;
+  height: 19px !important;
+  margin-left: 30px;
+}

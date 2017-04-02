@@ -106,11 +106,20 @@
 
 mixin cards(card)
   .column.product_card
-    img.thumbnail(src= card.thumbnail)
-    h5.card_brand= card.brand
-    .card_kind= card.kind
-    .card_size= card.size
-    .card_price= card.price
+    .card_image
+      a(href="#")
+        img.thumbnail(src= card.thumbnail width="300" height="400")
+      .card_badge Ни разу
+      .card_info
+        a.store_info На складе
+        a.choice_info Наш выбор
+    .card_wrap
+      a(href="#")
+        h5.card_brand= card.brand
+      .card_kind= card.kind
+      .card_size= card.size
+      .card_price= card.price
+      .card_heart 123
 
 .row.column.text-center
   h2.main_title Новые поступления

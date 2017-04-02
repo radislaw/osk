@@ -21,8 +21,13 @@
   .swiper-pagination-bullet-active {
     background-color: #A5A4A4;
   }
+
+
+   @media screen and (max-width: 640px) {
+     margin-top: 61px;
+    }
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  bottom: 30px;
+  bottom: 50px;
 }

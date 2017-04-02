@@ -1,23 +1,7 @@
--
-  var items = [
-  'Помощь и поддержка',
-  'О нас',
-  'Присоединиться к нам',
-  'Рассылка'
-  ];
-
 footer.row
-  nav.footer_menu
-    //ul.menu
-      for item in items
-        li: a(href )= item
-  .footer_socials
-  .footer_apps_link
-  .social_widget
-  .footer_about
-    .columns В интернет-магазине одежды и обуви Oskelly каждый может выбрать и купить одежду, обувь или аксессуар в 2 клика.
-      | В каталоге интернет-магазина Oskelly более 1000 брендов мужской, женской и детской обуви и одежды разных ценовых категорий, всего более 2 000 000 товаров.
-      | Кроме того, у нас есть аксессуары, косметика и парфюмерия, спортивные товары, и ассортимент постоянно пополняется!
-      | Со многими производителями Oskelly сотрудничает напрямую, в остальных случаях мы выбираем надежных, проbеренных поставщиков. Мы гарантируем подлинность товара, что подтверждается сертификатами.
-  .footer_payment.text-center.column
-    img(src="images/payments.png")
+  include footer_menu
+  include footer_socials
+  include footer_apps_link
+  include social_widget
+  include footer_about
+  include footer_payment

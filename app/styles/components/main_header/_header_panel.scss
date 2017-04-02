@@ -1,6 +1,15 @@
 .header_panel {
   padding: 28px 0;
   align-items: center;
+
+   @media screen and (max-width: 640px) {
+     position: fixed;
+     width: 100%;
+     background-color: #fff;
+     z-index: 50;
+     border-bottom: 2px solid #D8D8D8;
+     padding: 16px 0;
+    }
 }
 
 .header_contacts {
@@ -63,7 +72,6 @@
 
 .header_logo {
   img {
-    //margin: 0 20%;
 
     @media screen and (max-width: 960px) {
       margin: 0;
@@ -108,6 +116,13 @@
         }
       }
 
+      @media screen and (max-width: 578px) {
+        &:not(:first-child){
+          display: none;
+        }
+
+      }
+
       @media screen and (max-width: 960px) {
         flex-basis: 30px;
 
@@ -132,8 +147,10 @@
           height: 16px;
         }
       }
+
     }
   }
+
 }
 
 .header_panel_cart {

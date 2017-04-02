@@ -19,14 +19,14 @@
   ];
 
 .row.header_panel
-  #mobile-header.small-1
+  #mobile-header.small-4
     a#responsive-menu-button(href='#sidr-main') ☰
   .header_contacts.columns.large-4.hide-for-medium-only.hide-for-small-only
     .header_contacts_phone: a(href="tel:88007654321") 8 (800) 765 43 21
     .header_contacts_apps: a(href="tel:88007654321") 8 (800) 765 43 21
   .header_logo.columns.small-4.large-4
     img(src="images/logo.svg")
-  .header_panel_nav.columns.large-4.hide-for-medium-only.hide-for-small-only
+  .header_panel_nav.columns.small-4.large-4
     ul.menu.columns
       for item in items
         li(): a(href='#' class= item.class)= item.title

@@ -42,10 +42,29 @@
   }
   ];
 
-
-//#navigation
-  nav.nav
-    ul.menu.columns
-      for item in items
-        li(): a(href='#')= item.title
+//div(data-sticky-container)
+  #navigation.top-bar(data-sticky, data-options='marginTop:0;', style='width:100%', data-top-anchor='1')
+    .row
+      .top-bar-left
+        ul.dropdown.menu(data-dropdown-menu)
+          for item in items
+            li()
+              a(href='#')= item.title
+              ul.menu.vertical
+                li
+                  a(href='#') One
+                li
+                  a(href='#') Two
+                li
+                  a(href='#') Three
+      .top-bar-right
+        ul.menu
+          li
+            input(type='search', placeholder='Поиск')
+          li
+            button.button(type='button') Поиск
+          li
+            a(href='#') Как это работает
+          li
+            a(href='#') Продать
 

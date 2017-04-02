@@ -1,3 +1,24 @@
+.favorites{
+  max-width: 1024px;
+  margin-bottom: 1.5rem;
+
+  &.swiper-container-horizontal > .swiper-pagination-bullets {
+    bottom: 0px;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #EBECEC;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #A5A4A4;
+  }
+}
+
+.swiper-wrapper{
+  margin-bottom: 1rem;
+}
+
 .swiper-slide {
   text-align: center;
   font-size: 18px;

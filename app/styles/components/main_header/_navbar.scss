@@ -1,11 +1,11 @@
 .sidr{
-  background-color: #fff;
+
 }
 
 #mobile-header {
   display: none;
 }
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 640px){
   #mobile-header {
     display: block;
   }
@@ -16,7 +16,12 @@
 }
 
 
-
+.top-bar{
+  a{
+    color: #fff;
+    font-size: 14px;
+  }
+}
 
 
 
@@ -24,7 +29,7 @@
 .sidr {
   display: block;
   position: fixed;
-  top: 0;
+  top: 61px;
   height: 100%;
   z-index: 999999;
   width: 260px;

@@ -1,3 +1,5 @@
+$(document).foundation();
+
 var slider = new Swiper('.main_slider', {
   pagination: '.swiper-pagination',
   paginationClickable: true,
@@ -20,7 +22,7 @@ var favorites = new Swiper('.favorites', {
   prevButton: '.swiper-button-prev',
   slidesPerView: 5,
   paginationClickable: true,
-  spaceBetween: 20,
+  spaceBetween: 10,
   breakpoints: {
     768: {
       slidesPerView: 4,
